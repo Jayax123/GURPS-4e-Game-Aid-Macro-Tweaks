@@ -21,11 +21,15 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Imbue"
+							"qualifier": "Channeled Casting"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
 						},
 						"notes": {
 							"compare": "contains",
-							"qualifier": "Imbue level 3"
+							"qualifier": "Holy Might"
 						}
 					},
 					{
@@ -33,11 +37,11 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Imbue"
+							"qualifier": "Chi Mastery"
 						},
-						"notes": {
-							"compare": "contains",
-							"qualifier": "Imbue level 2"
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
 						}
 					}
 				]

@@ -12,14 +12,14 @@
 			],
 			"modifiers": [
 				{
-					"id": "mYNGGUZs00y9SCvDB",
+					"id": "mm6-QOgUSrIy53P1k",
 					"name": "Spell Slots",
 					"cost_adj": "+3",
 					"levels": 1,
 					"disabled": true
 				},
 				{
-					"id": "mwpUrwEYQpJPWDM95",
+					"id": "mVpYqzPj5Ukx1Dzvk",
 					"name": "Holy Might",
 					"cost_adj": "+50%",
 					"use_level_from_trait": true,
@@ -34,8 +34,7 @@
 							"amount": 0.5,
 							"per_level": true
 						}
-					],
-					"disabled": true
+					]
 				}
 			],
 			"points_per_level": 10,
@@ -53,13 +52,14 @@
 			"can_level": true,
 			"levels": 1,
 			"calc": {
-				"points": 10,
+				"points": 15,
 				"current_level": 1
 			}
 		},
 		{
 			"id": "tTNcNKzyuFTXRDeme",
 			"name": "Chi Mastery",
+			"local_notes": "Manually Change Imbuement Bonus",
 			"tags": [
 				"Advantage",
 				"Mental"
@@ -363,8 +363,7 @@
 						"compare": "contains",
 						"qualifier": "Imbue"
 					},
-					"amount": 1,
-					"per_level": true
+					"amount": 1
 				}
 			],
 			"can_level": true,
