@@ -59437,7 +59437,7 @@
 							"id": "pZvWGwg4N-SlbaDaA",
 							"name": "Water Jet",
 							"reference": "M187",
-							"local_notes": "[\"<script>self.name</script> Animation\"/:<script>self.name</script>]",
+							"local_notes": "[\"<script>self.name</script> Animation\"/macro Water Jet spell_name=<script>self.name</script>]",
 							"tags": [
 								"Water"
 							],
@@ -59471,7 +59471,7 @@
 							},
 							"weapons": [
 								{
-									"id": "wVizgDwN3z5NJ26wY",
+									"id": "wWe0tLuGEdF8llZLo",
 									"sv": 1,
 									"damage": {
 										"type": "cr/point",
@@ -59503,7 +59503,7 @@
 							],
 							"points": 1,
 							"calc": {
-								"resolved_notes": "[\"Water Jet Animation\"/:Water Jet]"
+								"resolved_notes": "[\"Water Jet Animation\"/macro Water Jet spell_name=Water Jet]"
 							}
 						},
 						{

@@ -19750,7 +19750,7 @@
 			"id": "rqSkUgVY4aF37JB-N",
 			"name": "Water Jet",
 			"reference": "M187",
-			"local_notes": "[\"<script>self.name</script> Animation\"/:<script>self.name</script>]",
+			"local_notes": "[\"<script>self.name</script> Animation\"/macro Water Jet spell_name=<script>self.name</script>]",
 			"tags": [
 				"Ritual Magic",
 				"Water"
@@ -19769,7 +19769,7 @@
 			"prereq_count": 4,
 			"weapons": [
 				{
-					"id": "w_kyMnxCMVFaajyC_",
+					"id": "wfWkAt7bZmBkhDWaN",
 					"sv": 1,
 					"damage": {
 						"type": "cr/point",
@@ -19800,7 +19800,7 @@
 				}
 			],
 			"calc": {
-				"resolved_notes": "[\"Water Jet Animation\"/:Water Jet]"
+				"resolved_notes": "[\"Water Jet Animation\"/macro Water Jet spell_name=Water Jet]"
 			}
 		},
 		{
