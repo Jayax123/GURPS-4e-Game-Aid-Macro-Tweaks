@@ -10,24 +10,79 @@
 			"container_type": "ancestry",
 			"children": [
 				{
-					"id": "t4cW20a_8XvD8VEe9",
+					"id": "tmjev0E3T8KN82wbC",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "t1w1RFcFceKR2T9_e"
+						"id": "tMrRhiOyGg6WNz09k"
 					},
-					"name": "Increased Intelligence",
-					"reference": "B15",
+					"name": "Bully",
+					"reference": "B125",
 					"tags": [
-						"Advantage",
-						"Attribute",
+						"Disadvantage",
 						"Mental"
 					],
-					"points_per_level": 20,
+					"cr": 12,
+					"base_points": -10,
 					"features": [
 						{
-							"type": "attribute_bonus",
-							"attribute": "iq",
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -2
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tENRikpYTlHSR-_Lh",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tzBDG0xUlT_dh7FuY"
+					},
+					"name": "Chummy",
+					"reference": "B126",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "to others",
+							"amount": 2
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to IQ-based skills when alone",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tu7oq4DtwWzwURPDY",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t5K9V7-_MYD_0BOQ8"
+					},
+					"name": "Hard to Subdue",
+					"reference": "B59",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to any HT roll to avoid unconsciousness",
 							"amount": 1,
 							"per_level": true
 						}
@@ -35,7 +90,7 @@
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 20,
+						"points": 2,
 						"current_level": 1
 					}
 				},
@@ -67,6 +122,173 @@
 					"calc": {
 						"points": 10,
 						"current_level": 1
+					}
+				},
+				{
+					"id": "t4cW20a_8XvD8VEe9",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t1w1RFcFceKR2T9_e"
+					},
+					"name": "Increased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental"
+					],
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 20,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tBdhVAw4siN20-Pn1",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tk0ZKpvgqpE35AZcM"
+					},
+					"name": "Night Vision",
+					"reference": "B71,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 1,
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 2,
+						"current_level": 2
+					}
+				},
+				{
+					"id": "t_zE30J7C-wA95Yy5",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tK9Ov0WtlrhnJFy5n"
+					},
+					"name": "Sharp Teeth",
+					"reference": "B91",
+					"tags": [
+						"Exotic",
+						"Perk",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mMUEu1P0VOdQED1Hg",
+							"name": "Provided by Vampiric Bite",
+							"reference": "B96",
+							"cost_adj": "-1",
+							"disabled": true
+						}
+					],
+					"base_points": 1,
+					"weapons": [
+						{
+							"id": "wxdtRu1gori5ZyvIr",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Brawling"
+									}
+								},
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cut"
+							}
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "to40X5n9E5_WjN5Q2",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tI6dwoBoTEQ-gfy0a"
+					},
+					"name": "Social Chameleon",
+					"reference": "B86",
+					"local_notes": "Exempt from reaction penalties due to differences in Rank or Status",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those who demand respect in situations where there would be no penalties due to differences in Rank or Status",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tpRA-jJ4VoQYm6DlV",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tADHt96N0YvzBBqMQ"
+					},
+					"name": "Social Stigma (Monster)",
+					"reference": "B155",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"base_points": -15,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "intimidation"
+							},
+							"amount": 1
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -3
+						}
+					],
+					"calc": {
+						"points": -15
 					}
 				},
 				{
@@ -184,196 +406,16 @@
 					}
 				},
 				{
-					"id": "to40X5n9E5_WjN5Q2",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tI6dwoBoTEQ-gfy0a"
-					},
-					"name": "Social Chameleon",
-					"reference": "B86",
-					"local_notes": "Exempt from reaction penalties due to differences in Rank or Status",
-					"tags": [
-						"Advantage",
-						"Mental"
-					],
-					"base_points": 5,
-					"features": [
-						{
-							"type": "reaction_bonus",
-							"situation": "from those who demand respect in situations where there would be no penalties due to differences in Rank or Status",
-							"amount": 1
-						}
-					],
-					"calc": {
-						"points": 5
-					}
-				},
-				{
-					"id": "tENRikpYTlHSR-_Lh",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tzBDG0xUlT_dh7FuY"
-					},
-					"name": "Chummy",
-					"reference": "B126",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"base_points": -5,
-					"features": [
-						{
-							"type": "reaction_bonus",
-							"situation": "to others",
-							"amount": 2
-						},
-						{
-							"type": "conditional_modifier",
-							"situation": "to IQ-based skills when alone",
-							"amount": -1
-						}
-					],
-					"calc": {
-						"points": -5
-					}
-				},
-				{
-					"id": "tmjev0E3T8KN82wbC",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tMrRhiOyGg6WNz09k"
-					},
-					"name": "Bully",
-					"reference": "B125",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"cr": 12,
+					"id": "tT0sQZ9SWszdq849N",
+					"name": "Wyrdentia Common Race",
 					"base_points": -10,
-					"features": [
-						{
-							"type": "reaction_bonus",
-							"situation": "from others",
-							"amount": -2
-						}
-					],
 					"calc": {
 						"points": -10
-					}
-				},
-				{
-					"id": "tu7oq4DtwWzwURPDY",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "t5K9V7-_MYD_0BOQ8"
-					},
-					"name": "Hard to Subdue",
-					"reference": "B59",
-					"tags": [
-						"Advantage",
-						"Physical"
-					],
-					"points_per_level": 2,
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "to any HT roll to avoid unconsciousness",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 1,
-					"calc": {
-						"points": 2,
-						"current_level": 1
-					}
-				},
-				{
-					"id": "tBdhVAw4siN20-Pn1",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tk0ZKpvgqpE35AZcM"
-					},
-					"name": "Night Vision",
-					"reference": "B71,P87",
-					"tags": [
-						"Advantage",
-						"Physical"
-					],
-					"points_per_level": 1,
-					"can_level": true,
-					"levels": 2,
-					"calc": {
-						"points": 2,
-						"current_level": 2
-					}
-				},
-				{
-					"id": "t_zE30J7C-wA95Yy5",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tK9Ov0WtlrhnJFy5n"
-					},
-					"name": "Sharp Teeth",
-					"reference": "B91",
-					"tags": [
-						"Exotic",
-						"Perk",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "mMUEu1P0VOdQED1Hg",
-							"name": "Provided by Vampiric Bite",
-							"reference": "B96",
-							"cost_adj": "-1",
-							"disabled": true
-						}
-					],
-					"base_points": 1,
-					"weapons": [
-						{
-							"id": "wxdtRu1gori5ZyvIr",
-							"sv": 1,
-							"damage": {
-								"type": "cut",
-								"st": "thr",
-								"base": "-1"
-							},
-							"usage": "Bite",
-							"reach": "C",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": {
-										"compare": "is",
-										"qualifier": "Brawling"
-									}
-								},
-								{
-									"type": "dx"
-								}
-							],
-							"calc": {
-								"damage": "thr-1 cut"
-							}
-						}
-					],
-					"calc": {
-						"points": 1
 					}
 				}
 			],
 			"calc": {
-				"points": 35
+				"points": 10
 			}
 		}
 	],

@@ -4,19 +4,102 @@
 	"traits": [
 		{
 			"id": "T6by2MI66shgy2plP",
-			"name": "Human",
+			"name": "High Elf",
 			"reference": "DF3:7",
 			"ancestry": "Human",
 			"container_type": "ancestry",
 			"children": [
 				{
-					"id": "t9YqWECi5TRMeGTKK",
+					"id": "t6Xuv9ssXYRZAvqK1",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "trvn9KmEPe9qGbSdZ"
+						"id": "tNe543pbMl1IkZxSo"
 					},
-					"name": "Decreased Health",
+					"name": "Callous",
+					"reference": "B125",
+					"local_notes": "If an older elf.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "psychology"
+							},
+							"amount": -3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "teaching"
+							},
+							"amount": -3
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from past victims and anyone with Empathy",
+							"amount": -1
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to Interrogation and Intimidation rolls when you use threats or torture",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "ts2ck2B00gMUxjOK5",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "ttlpxHmhTlHZvLehl"
+					},
+					"name": "Clueless",
+					"reference": "B126",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "savoir-faire"
+							},
+							"amount": -4
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others aware of your clueless nature",
+							"amount": -2
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to resist Sex Appeal",
+							"amount": 4
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tqc3TL9rTbXlwOWxX",
+					"name": "Decreased Strength",
 					"reference": "B14",
 					"tags": [
 						"Attribute",
@@ -27,7 +110,7 @@
 					"features": [
 						{
 							"type": "attribute_bonus",
-							"attribute": "ht",
+							"attribute": "st",
 							"amount": -1,
 							"per_level": true
 						}
@@ -40,195 +123,7 @@
 					}
 				},
 				{
-					"id": "tnK-dWh1e_CUaMLCj",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tMA9_2yoV8Czd7arj"
-					},
-					"name": "Decreased Will",
-					"reference": "B16",
-					"tags": [
-						"Attribute",
-						"Disadvantage",
-						"Mental"
-					],
-					"points_per_level": -5,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "will",
-							"amount": -1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 1,
-					"calc": {
-						"points": -5,
-						"current_level": 1
-					}
-				},
-				{
-					"id": "tFs9oQ1CcZNvMAVAH",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tY_8UkOBvzKIAgGGQ"
-					},
-					"name": "High Manual Dexterity",
-					"reference": "B59",
-					"tags": [
-						"Advantage",
-						"Physical"
-					],
-					"points_per_level": 5,
-					"features": [
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "artist"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "jeweler"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "knot-tying"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "leatherworking"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "lockpicking"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "pickpocket"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "sewing"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "sleight of hand"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "surgery"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "machinist"
-							},
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "mechanic"
-							},
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 2,
-					"calc": {
-						"points": 10,
-						"current_level": 2
-					}
-				},
-				{
-					"id": "tj-YYhIm3Qk2Juveq",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tzSU0oJe0L8zY5VA5"
-					},
-					"name": "Honest Face",
-					"reference": "B101",
-					"tags": [
-						"Perk",
-						"Physical"
-					],
-					"base_points": 1,
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "to trained Acting skill for the sole purpose of \"acting innocent\"",
-							"amount": 1
-						}
-					],
-					"calc": {
-						"points": 1
-					}
-				},
-				{
-					"id": "tS_P1X5bIk4MDe85Z",
+					"id": "tBWGIIbk6nQ4ewONU",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
@@ -251,86 +146,168 @@
 						}
 					],
 					"can_level": true,
-					"levels": 1,
+					"levels": 2,
 					"calc": {
-						"points": 20,
-						"current_level": 1
+						"points": 40,
+						"current_level": 2
 					}
 				},
 				{
-					"id": "tmO9KS3VJrEcBLq80",
+					"id": "tRbGP5WyOMnvZ0giU",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tpwIBKlkbnSdcNrWd"
+						"id": "t4ANWaWCephx_yJpO"
 					},
-					"name": "Racial Skill Bonus - @Skill without a specialization@",
-					"reference": "BX452",
+					"name": "Indomitable",
+					"reference": "B60",
+					"local_notes": "Impossible to influence through ordinary words or actions",
 					"tags": [
 						"Advantage",
-						"Exotic",
-						"Mental",
-						"Talent"
+						"Mental"
 					],
-					"replacements": {
-						"Skill without a specialization": "Thaumatology"
+					"base_points": 15,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "tEz7RhBrKZboWV2bl",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tpnv8EEpAS6Er2pwK"
 					},
-					"points_per_level": 2,
+					"name": "Knowledge Magery",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mSN7cOuDOPccdq3ib",
+							"name": "Dance",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mspFtTAsWiA0gJRSh",
+							"name": "Dark-Aspected",
+							"cost_adj": "-50%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m4rsml1v58ZE7dhvR",
+							"name": "Day-Aspected",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mu8MLwHBfVe0OZVZx",
+							"name": "Musical",
+							"cost_adj": "-50%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mtKFVI-jdceNVAHtD",
+							"name": "Night-Aspected",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mLdXetOauTN3yfa5U",
+							"name": "One College",
+							"local_notes": "@College@",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mbtzjEbGHI3Pk76jw",
+							"name": "Solitary",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "ms9exVHGYOjnHzraz",
+							"name": "Song",
+							"cost_adj": "-40%",
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 10,
 					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
 						{
 							"type": "skill_bonus",
 							"selection_type": "skills_with_name",
 							"name": {
 								"compare": "is",
-								"qualifier": "@Skill without a specialization@"
+								"qualifier": "thaumatology"
 							},
 							"amount": 1,
 							"per_level": true
 						}
 					],
 					"can_level": true,
-					"levels": 2,
 					"calc": {
-						"points": 4,
-						"current_level": 2
+						"points": 5,
+						"current_level": 0
 					}
 				},
 				{
-					"id": "tFrlt6oxXPImhRdpR",
-					"name": "Spellsmith",
-					"tags": [
-						"Advantage",
-						"Mental"
-					],
-					"base_points": 25,
-					"calc": {
-						"points": 25
-					}
-				},
-				{
-					"id": "tbCxXCTG92VLZ5h-y",
+					"id": "tMeWhorX3TLua_zJh",
 					"source": {
-						"library": "/gcs_user_library",
-						"path": "Library/Basic Set/Basic Set Traits.adq",
-						"id": "tJusm03XASEmePVLU"
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tYdqy1uPSGI8VqvLV"
 					},
-					"name": "Teratophobia (Monsters)",
-					"reference": "B150",
-					"local_notes": "Any “unnatural” creature sets off this fear. You have -1 to -4 on the self-control roll if the monster seems very large or dangerous, or if there are a lot of them. Note that the definition of “monster” depends on experience. An American Indian would consider an elephant monstrous, while an African pygmy would not!",
+					"name": "Selfish",
+					"reference": "B153",
+					"local_notes": "Make a self-control roll whenever you experience a clear social slight or “snub.” On a failure, you lash out at the offending party just as if you had Bad Temper.",
 					"tags": [
 						"Disadvantage",
 						"Mental"
 					],
-					"cr_adj": "action_penalty",
 					"cr": 12,
-					"base_points": -15,
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others when your Selfishness surfaces",
+							"amount": -3
+						}
+					],
 					"calc": {
-						"points": -15
+						"points": -5
+					}
+				},
+				{
+					"id": "tdChIewOgS8v9cFtQ",
+					"name": "Wyrdentia Common Race",
+					"base_points": -10,
+					"calc": {
+						"points": -10
 					}
 				}
 			],
 			"calc": {
-				"points": 20
+				"points": 10
 			}
 		}
 	],

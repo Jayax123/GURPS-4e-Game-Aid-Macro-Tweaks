@@ -4,179 +4,49 @@
 	"traits": [
 		{
 			"id": "TnDst4cCMeVgeU623",
-			"name": "Mountain Dwarf",
+			"name": "Castle Dwarf",
 			"reference": "DF3:6",
 			"ancestry": "Human",
 			"container_type": "ancestry",
 			"children": [
 				{
-					"id": "tLdWCxqcuLE_sN6ht",
+					"id": "tyMQ4g_MYVbfu-EeJ",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tqha9GlDBU9P-Wg-6"
+						"id": "t7yv4h1kT0itJulCu"
 					},
-					"name": "Increased Strength",
-					"reference": "B14",
+					"name": "Cannot Float",
+					"reference": "B165",
 					"tags": [
-						"Advantage",
-						"Attribute",
-						"Physical"
+						"Physical",
+						"Quirk"
 					],
-					"modifiers": [
-						{
-							"id": "mkvDHUaALQ34gn3uj",
-							"name": "No Fine Manipulators",
-							"reference": "B15",
-							"cost_adj": "-40%",
-							"disabled": true
-						},
-						{
-							"id": "ma9vsN97xij9gvJIW",
-							"name": "Size",
-							"reference": "B15",
-							"cost_adj": "-10%",
-							"levels": 1,
-							"disabled": true
-						},
-						{
-							"id": "myYKue02_EtV3tIEs",
-							"name": "Super-Effort",
-							"reference": "SU24",
-							"cost_adj": "300%",
-							"disabled": true
-						}
-					],
-					"points_per_level": 10,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "st",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 2,
+					"base_points": -1,
 					"calc": {
-						"points": 20,
-						"current_level": 2
+						"points": -1
 					}
 				},
 				{
-					"id": "tBLc9YRAogKdtzyVo",
+					"id": "tTOsCLSixQN2iSC4q",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tVt3SvdGWNchJ8z4o"
+						"id": "tXJ60phAKJZOz3Pv5"
 					},
-					"name": "Increased Health",
-					"reference": "B14",
+					"name": "Compulsive Behaviour (@Activity@)",
+					"reference": "B128",
 					"tags": [
-						"Advantage",
-						"Attribute",
-						"Physical"
+						"Disadvantage",
+						"Mental"
 					],
-					"points_per_level": 10,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "ht",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 1,
+					"replacements": {
+						"Activity": "Grudging"
+					},
+					"cr": 12,
+					"base_points": -5,
 					"calc": {
-						"points": 10,
-						"current_level": 1
-					}
-				},
-				{
-					"id": "tlwg2sTjAFsSYTOaF",
-					"name": "Extra Fatigue Points",
-					"reference": "B16",
-					"tags": [
-						"Advantage",
-						"Attribute",
-						"Physical"
-					],
-					"points_per_level": 3,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "fp",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 2,
-					"calc": {
-						"points": 6,
-						"current_level": 2
-					}
-				},
-				{
-					"id": "t8wA6j8tyR20nVsU_",
-					"name": "Resistant",
-					"reference": "B81",
-					"tags": [
-						"Advantage",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "mlrT6WHObQpnSZbid",
-							"name": "@Very Common: Metabolic Hazards, etc.@",
-							"reference": "B80",
-							"cost_adj": "30",
-							"disabled": true
-						},
-						{
-							"id": "maB1yOA1FY6eB40yR",
-							"name": "Poison",
-							"reference": "B81",
-							"cost_adj": "15"
-						},
-						{
-							"id": "mUfou-6pVsmdycL3T",
-							"name": "@Occasional: Disease, Ingested Poison, etc.@",
-							"reference": "B81",
-							"cost_adj": "10",
-							"disabled": true
-						},
-						{
-							"id": "mP9NBzP5nf02vumFB",
-							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
-							"reference": "B81",
-							"cost_adj": "5",
-							"disabled": true
-						},
-						{
-							"id": "mXgVRaK5tQDBPzZ7d",
-							"name": "Immunity",
-							"reference": "B81",
-							"cost_adj": "x1",
-							"disabled": true
-						},
-						{
-							"id": "mNcgUx28vDkX3HYJV",
-							"name": "+8 to all HT rolls to resist",
-							"reference": "B81",
-							"cost_adj": "x0.5",
-							"disabled": true
-						},
-						{
-							"id": "mHG249pfxlBFtRc1D",
-							"name": "+3 to all HT rolls to resist",
-							"reference": "B81",
-							"cost_adj": "x0.33"
-						}
-					],
-					"calc": {
-						"points": 5
+						"points": -5
 					}
 				},
 				{
@@ -434,56 +304,6 @@
 					}
 				},
 				{
-					"id": "tlfjkoGsq1YD1a6a8",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tWoMSz-IMAxDJo8rh"
-					},
-					"name": "Extra Hit Points",
-					"reference": "B16",
-					"tags": [
-						"Advantage",
-						"Attribute",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "m8vjq59RDBg8w7IqL",
-							"name": "Size",
-							"cost_adj": "-10%",
-							"levels": 1,
-							"disabled": true
-						}
-					],
-					"points_per_level": 2,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "hp",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 1,
-					"calc": {
-						"points": 2,
-						"current_level": 1
-					}
-				},
-				{
-					"id": "tamkRCFO55IKKiVwf",
-					"name": "Huge Weapons",
-					"tags": [
-						"Perk"
-					],
-					"base_points": 1,
-					"calc": {
-						"points": 1
-					}
-				},
-				{
 					"id": "tAf65Ca1ngZwXKtpk",
 					"name": "Decreased Basic Move",
 					"reference": "B16",
@@ -509,6 +329,215 @@
 					}
 				},
 				{
+					"id": "tlwg2sTjAFsSYTOaF",
+					"name": "Extra Fatigue Points",
+					"reference": "B16",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"points_per_level": 3,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "fp",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 6,
+						"current_level": 2
+					}
+				},
+				{
+					"id": "tx1iUW1JB0SncogyV",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t4KGpV0KBExr-fEb2"
+					},
+					"name": "Gregarious",
+					"reference": "B126",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "to others",
+							"amount": 4
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to IQ-based skills when alone, or only -1 if in a group of 4 or less",
+							"amount": -2
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tlRe95FE33uwvTtxR",
+					"name": "Increased Health",
+					"reference": "B14",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 10,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tmpDvJopCyYyCiV9a",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t1w1RFcFceKR2T9_e"
+					},
+					"name": "Increased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental"
+					],
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 20,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "t-RqQEXUVCCXAlLDX",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tpwIBKlkbnSdcNrWd"
+					},
+					"name": "Racial Skill Bonus - @Skill without a specialization@",
+					"reference": "BX452",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Mental",
+						"Talent"
+					],
+					"replacements": {
+						"Skill without a specialization": "Masonry"
+					},
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "@Skill without a specialization@"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 2,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "t8wA6j8tyR20nVsU_",
+					"name": "Resistant",
+					"reference": "B81",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mlrT6WHObQpnSZbid",
+							"name": "@Very Common: Metabolic Hazards, etc.@",
+							"reference": "B80",
+							"cost_adj": "30",
+							"disabled": true
+						},
+						{
+							"id": "maB1yOA1FY6eB40yR",
+							"name": "Poison",
+							"reference": "B81",
+							"cost_adj": "15"
+						},
+						{
+							"id": "mUfou-6pVsmdycL3T",
+							"name": "@Occasional: Disease, Ingested Poison, etc.@",
+							"reference": "B81",
+							"cost_adj": "10",
+							"disabled": true
+						},
+						{
+							"id": "mP9NBzP5nf02vumFB",
+							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+							"reference": "B81",
+							"cost_adj": "5",
+							"disabled": true
+						},
+						{
+							"id": "mXgVRaK5tQDBPzZ7d",
+							"name": "Immunity",
+							"reference": "B81",
+							"cost_adj": "x1",
+							"disabled": true
+						},
+						{
+							"id": "mNcgUx28vDkX3HYJV",
+							"name": "+8 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "mHG249pfxlBFtRc1D",
+							"name": "+3 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_adj": "x0.33"
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
 					"id": "ttV_TqXC4G1J3Y1Fm",
 					"name": "Stubbornness",
 					"reference": "B157",
@@ -522,33 +551,20 @@
 					}
 				},
 				{
-					"id": "tTOsCLSixQN2iSC4q",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tXJ60phAKJZOz3Pv5"
-					},
-					"name": "Compulsive Behaviour (@Activity@)",
-					"reference": "B128",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"replacements": {
-						"Activity": "Grudging"
-					},
-					"cr": 9,
-					"base_points": -5,
+					"id": "tzPqSo1DHJSkoPrZN",
+					"name": "Wyrdentia Common Race",
+					"base_points": -10,
 					"calc": {
-						"points": -7
+						"points": -10
 					}
 				}
 			],
 			"calc": {
-				"points": 30
+				"points": 10
 			}
 		}
 	],
+	"skills": [],
 	"body_type": {
 		"name": "Humanoid",
 		"roll": "3d",

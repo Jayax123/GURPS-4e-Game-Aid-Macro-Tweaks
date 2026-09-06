@@ -10,32 +10,31 @@
 			"container_type": "ancestry",
 			"children": [
 				{
-					"id": "tv9O9_Noij7eY5GsS",
+					"id": "tWofNNsjXCzf9QBBo",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "t1w1RFcFceKR2T9_e"
+						"id": "t9JmDbmYS-RXMN3vt"
 					},
-					"name": "Increased Intelligence",
-					"reference": "B15",
+					"name": "Decreased Size Modifier",
+					"reference": "B19",
 					"tags": [
-						"Advantage",
 						"Attribute",
-						"Mental"
+						"Disadvantage",
+						"Physical"
 					],
-					"points_per_level": 20,
 					"features": [
 						{
 							"type": "attribute_bonus",
-							"attribute": "iq",
-							"amount": 1,
+							"attribute": "sm",
+							"amount": -1,
 							"per_level": true
 						}
 					],
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 20,
+						"points": 0,
 						"current_level": 1
 					}
 				},
@@ -134,6 +133,36 @@
 					}
 				},
 				{
+					"id": "tv9O9_Noij7eY5GsS",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t1w1RFcFceKR2T9_e"
+					},
+					"name": "Increased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental"
+					],
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 20,
+						"current_level": 1
+					}
+				},
+				{
 					"id": "tN-3yqRT9c2KRfmR_",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -177,32 +206,23 @@
 					}
 				},
 				{
-					"id": "tWofNNsjXCzf9QBBo",
+					"id": "t7IZovpe5TKUHBoiv",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "t9JmDbmYS-RXMN3vt"
+						"id": "tu0KYjUBLw84B4gKc"
 					},
-					"name": "Decreased Size Modifier",
-					"reference": "B19",
+					"name": "Trickster",
+					"reference": "B159",
+					"local_notes": "Make a self-control roll each day. If you fail, you must try to trick a dangerous subject: a skilled warrior, a dangerous monster, a whole group of reasonably competent opponents, etc. If you resist, you get a cumulative -1 per day to your self-control roll until you finally fail a roll!",
 					"tags": [
-						"Attribute",
 						"Disadvantage",
-						"Physical"
+						"Mental"
 					],
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "sm",
-							"amount": -1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 1,
+					"cr": 12,
+					"base_points": -15,
 					"calc": {
-						"points": 0,
-						"current_level": 1
+						"points": -15
 					}
 				},
 				{
@@ -252,28 +272,16 @@
 					}
 				},
 				{
-					"id": "t7IZovpe5TKUHBoiv",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tu0KYjUBLw84B4gKc"
-					},
-					"name": "Trickster",
-					"reference": "B159",
-					"local_notes": "Make a self-control roll each day. If you fail, you must try to trick a dangerous subject: a skilled warrior, a dangerous monster, a whole group of reasonably competent opponents, etc. If you resist, you get a cumulative -1 per day to your self-control roll until you finally fail a roll!",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"cr": 12,
-					"base_points": -15,
+					"id": "tvEqNCq-fbIsUZsXv",
+					"name": "Wyrdentia Common Race",
+					"base_points": -10,
 					"calc": {
-						"points": -15
+						"points": -10
 					}
 				}
 			],
 			"calc": {
-				"points": 20
+				"points": 10
 			}
 		}
 	],
